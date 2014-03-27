@@ -1,9 +1,0 @@
-#!/Users/Bobby/Documents/Projects/BarWatch/dev/bin/python
-# EASY-INSTALL-ENTRY-SCRIPT: 'xattr==0.6.1','console_scripts','xattr'
-__requires__ = 'xattr==0.6.1'
-import sys
-from pkg_resources import load_entry_point
-
-sys.exit(
-   load_entry_point('xattr==0.6.1', 'console_scripts', 'xattr')()
-)

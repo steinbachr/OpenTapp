@@ -1,58 +1,0 @@
-10
-
-dir
-195
-svn+ssh://bobby@slutty-ninja.dnsdynamic.com/home/bobby/ProjectsRepo/BarWatch/app/res
-svn+ssh://bobby@slutty-ninja.dnsdynamic.com/home/bobby/ProjectsRepo/BarWatch
-
-
-
-2012-12-24T09:42:17.276147Z
-132
-bobby
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-92682fe3-6932-4de1-a87e-e5e387265286
-
-color
-dir
-
-drawable-hdpi
-dir
-
-drawable-ldpi
-dir
-
-drawable-mdpi
-dir
-
-drawable-xhdpi
-dir
-
-layout
-dir
-
-menu
-dir
-
-values
-dir
-
-values-v11
-dir
-
-values-v14
-dir
-

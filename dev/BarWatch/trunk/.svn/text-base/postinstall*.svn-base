@@ -1,2 +1,0 @@
-#!/bin/sh
-python barwatch/manage.py syncdb --noinput
