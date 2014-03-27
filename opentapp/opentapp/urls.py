@@ -18,7 +18,7 @@ router.register(r'groupcoupons', views.GroupCouponViewSet)
 router.register(r'users', views.MobileUserViewSet)
 
 ##HOME PATTERNS###
-urlpatterns = patterns('barportal.views',
+urlpatterns = patterns('opentapp.barportal.views',
     url(r'^$', 'home'),        
     url(r'^admin/', include(admin.site.urls)),
 )
@@ -26,14 +26,14 @@ urlpatterns = patterns('barportal.views',
 ##API PATTERNS##
 urlpatterns += patterns('',
     url(r'^api/', include(router.urls)),    
-    url(r'^api/singlecoupons/(?P<coupon>\d+)/redeem/$', 'barportal.views.redeem_coupon', {'type': e.DealTypes.SINGLE}),
-    url(r'^api/groupcoupons/(?P<coupon>\d+)/invite/$', 'barportal.views.invite_group'),
-    url(r'^api/groupcoupons/(?P<coupon>\d+)/redeem/$', 'barportal.views.redeem_coupon', {'type': e.DealTypes.GROUP}),
+    url(r'^api/singlecoupons/(?P<coupon>\d+)/redeem/$', 'opentapp.barportal.views.redeem_coupon', {'type': e.DealTypes.SINGLE}),
+    url(r'^api/groupcoupons/(?P<coupon>\d+)/invite/$', 'opentapp.barportal.views.invite_group'),
+    url(r'^api/groupcoupons/(?P<coupon>\d+)/redeem/$', 'opentapp.barportal.views.redeem_coupon', {'type': e.DealTypes.GROUP}),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 )
 
 ##BAR PATTERNS##
-urlpatterns += patterns('barportal.views',
+urlpatterns += patterns('opentapp.barportal.views',
     url(r'^user/(?P<user>\d+)/signed-in/$', 'logged_in'),    
     url(r'^user/(?P<user>\d+)/signed-in/broadcast/$', 'broadcast_coupon'),
     url(r'^user/(?P<user>\d+)/signed-in/edit-profile/$', 'edit_profile'),    
@@ -42,7 +42,7 @@ urlpatterns += patterns('barportal.views',
 )
 
 ##INTERNAL SERVICE PATTERNS##
-urlpatterns += patterns('barportal.internal_services',
+urlpatterns += patterns('opentapp.barportal.internal_services',
     url(r'^internal-service/autocomplete/$', 'autocompleter')    
 )
 
