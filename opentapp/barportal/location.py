@@ -1,5 +1,5 @@
 from geopy.geocoders.googlev3 import GoogleV3
-from barwatch import helpers as h
+from barportal import helpers as h
 import httplib
 import urllib2 as url
 import json

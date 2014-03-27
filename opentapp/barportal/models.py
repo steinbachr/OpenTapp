@@ -48,8 +48,8 @@ class Bar(models.Model):
     
     @property
     def balance(self):
-        from barwatch import queries as q
-        
+        from barportal import queries as q
+
         redemptions_since_last_payment = q.coupon_redemptions_since_last_payment(self).count() * Coupon.redemption_rate()
         return redemptions_since_last_payment    
 

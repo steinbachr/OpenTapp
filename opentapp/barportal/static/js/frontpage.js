@@ -5,13 +5,13 @@ $(document).ready(function() {
     
     //setup
     $('input.bar-location').typeahead();
-    autocomplete = new google.maps.places.Autocomplete($('input.bar-location').get(0));
+    var autocomplete = new google.maps.places.Autocomplete($('input.bar-location').get(0));
     //put an asterisk next to required fields
     $('.step input').each(function() {
         if ($(this).attr('required')) {
             $(this).parent().prev().find('.required-asterisk').css('display', 'inline');
         }
-    })
+    });
 
     function moveStep(direction) {
         var pattern = /step(\d)/;

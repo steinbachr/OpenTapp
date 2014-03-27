@@ -4,10 +4,13 @@ from django.template import RequestContext
 from django.http import HttpResponse, HttpResponseRedirect, HttpResponseNotAllowed
 from django.core.urlresolvers import reverse
 from django.shortcuts import render_to_response, render
-from barwatch.barportal import forms, models
-from barwatch.barportal.portlets import *
-from barwatch.barportal.serializers import *
-import barwatch.helpers as h
+from barportal import forms, models
+from barportal.portlets import *
+from barportal.serializers import *
+import barportal.helpers as h
+from barportal.email import DrinkUpEmail
+from django.contrib.auth import authenticate, login
+from location import BarLocation as bar_loc
 from rest_framework import viewsets, status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -15,10 +18,6 @@ from rest_framework.response import Response
 ##HOME ACTIONS
 #this is terrible, TODO: refactor
 def home(request):
-    from barwatch.barportal.email import DrinkUpEmail
-    from django.contrib.auth import authenticate, login
-    from barwatch.location import BarLocation as bar_loc
-    
     if request.user.is_authenticated():
         return HttpResponseRedirect(reverse('barwatch.barportal.views.logged_in', args=(request.user.id,)))            
             
@@ -64,7 +63,7 @@ def home(request):
                 for mailer in mail_all:
                     mailer.send()
     
-                return HttpResponseRedirect(h.url(reverse('barwatch.barportal.views.home'), {'signup_success' : True}))                                
+                return HttpResponseRedirect(h.url(reverse('barportal.views.home'), {'signup_success' : True}))
             else:
                 signup_hidden = False
         else:            
@@ -78,7 +77,7 @@ def home(request):
                 login(request, user)
                 request.session['user_id'] = request.user.id #we need to hold the original user in the session to make sure they dont try to switch users during the session
     
-                return HttpResponseRedirect(reverse('barwatch.barportal.views.logged_in', args=(request.user.id,)))
+                return HttpResponseRedirect(reverse('barportal.views.logged_in', args=(request.user.id,)))
             else:            
                 login_hidden = False         
                 
@@ -131,7 +130,7 @@ def logged_in(request, user=0):
 
 def logout_user(request):
     logout(request)    
-    return HttpResponseRedirect(reverse('barwatch.barportal.views.home'))
+    return HttpResponseRedirect(reverse('barportal.views.home'))
 
 @login_required
 def broadcast_coupon(request, user=0):

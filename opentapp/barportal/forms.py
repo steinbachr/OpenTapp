@@ -4,10 +4,10 @@ from django.forms import ModelForm
 from django.forms.widgets import DateInput
 from django.contrib.auth.models import User
 from django.core.exceptions import ObjectDoesNotExist
-from barwatch.barportal.models import Bar
-from barwatch.barportal.form_fields import *
-import barwatch.enums as enums
-import barwatch.helpers as h
+from barportal.models import Bar
+from barportal.form_fields import *
+import enums as enums
+import helpers as h
 import re, datetime
 
 

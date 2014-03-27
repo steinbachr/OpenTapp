@@ -1,8 +1,8 @@
 from django.db.models import F, Q
-from barwatch.barportal.models import SingleCoupon as s_coupon
-from barwatch.barportal.models import GroupCoupon as g_coupon
-from barwatch.barportal.models import CouponRedemption as cr
-from barwatch.barportal.models import Payment as payment
+from barportal.models import SingleCoupon as s_coupon
+from barportal.models import GroupCoupon as g_coupon
+from barportal.models import CouponRedemption as cr
+from barportal.models import Payment as payment
 import datetime
 
 

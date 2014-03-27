@@ -3,7 +3,7 @@ import random
 import datetime, re, os
 from django.core.urlresolvers import reverse
 from pytz import timezone
-from barwatch import enums as e
+from barportal import enums as e
 
 def random_string(n):
     '''generate a random string of n characters'''
@@ -36,6 +36,7 @@ def string_from_time(t):
     format = e.Formatting.TIME_FORMAT
     return datetime.time.strftime(t, format)
 
+
 def string_from_date(d):
     format = e.Formatting.DATE_FORMAT
     return datetime.date.strftime(d, format)
@@ -45,14 +46,13 @@ def string_from_date(d):
 def parse_config_file():    
     config_dict = {}    
 
-    with open('barwatch/config.ini', 'r') as file:
+    with open('{base}/barportal/config.ini'.format(base=os.getcwd()), 'r') as file:
         for line in file.readlines():
             if line.startswith('#'):
                 continue
             match = line.split('=')
             config_dict[match[0]] = match[1].rstrip()
             
-        
     return config_dict
 
 def read_file(file_path):
@@ -74,7 +74,7 @@ def external_url(url_string, params=None):
     return external_url
 
 def internal_url(view_action, user, params=None, action_dir='views'):       
-    internal_url = url(reverse('barwatch.barportal.%s.%s' % (action_dir, view_action), args=(user.id,)), params)    
+    internal_url = url(reverse('barportal.%s.%s' % (action_dir, view_action), args=(user.id,)), params)
     return internal_url
         
 def url(url, params):

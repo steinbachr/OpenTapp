@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Django default" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="b35a61a1-1656-4834-a32d-b4995a26aef5">
+    <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+    <jdbc-url>jdbc:postgresql://ec2-23-21-243-117.compute-1.amazonaws.com/d8i9vq70pj5c52</jdbc-url>
+    <user-name>mrnqdsmygbbdbz</user-name>
+    <user-password>dfe9dfdfdfd3dfd2dfc6dfd8df98dffddff5dfeddff3dfe2dffddfdadfe5dfe6dffadfc7df9fdfd0dfdddfcbdfdedfc4dfe6dfc6</user-password>
+    <libraries/>
+  </data-source>
+</component>

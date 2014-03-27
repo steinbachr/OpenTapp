@@ -1,7 +1,7 @@
-from barwatch.barportal.models import *
-from barwatch.barportal.forms import *
-from barwatch.barportal.portlets import *
-from barwatch import enums as e
+from barportal.models import *
+from barportal.forms import *
+from barportal.portlets import *
+from barportal import enums as e
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 

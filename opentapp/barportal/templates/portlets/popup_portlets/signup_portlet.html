@@ -7,6 +7,7 @@
 {% endblock %}
 {% block message %}    
     <form class="form-horizontal" method="post" id="signup-form" enctype="multipart/form-data">
+        {% csrf_token %}
         <div class="step step0 current info-page">
             <h2>What is drinkUp?</h2>
             drinkUp is a promotional and social media platform that focuses exclusively 

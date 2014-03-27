@@ -7,70 +7,70 @@
         Publish steep coupons to drive clientele to your bar
     </div>
     <div class="span12 broadcast">
-        <form action="{% url barwatch.barportal.views.broadcast_coupon user.id %}" method="post" id="broadcast-form">
-        <div class="coupon-desc">            
-                <div class="deal-type">
-                    <h4>deal type</h4>
-                    {{ broadcast_form.deal_type }}
-                </div>
-                
-                {# SINGLE AND GROUP COUPON SPECIFIC  #}
-                <div class="single-coupon quantity">
-                    <div class="coupon-description">
-                        <h4>coupon description (users see this)</h4>
-                        {{ single_broadcast_form.coupon_description }}
+        <form action="{% url 'barportal.views.broadcast_coupon' user.id %}" method="post" id="broadcast-form">{% csrf_token %}
+            <div class="coupon-desc">
+                    <div class="deal-type">
+                        <h4>deal type</h4>
+                        {{ broadcast_form.deal_type }}
                     </div>
-                </div>
-                <div class="group-coupon discount-tiers">
-                    <h4>discount tiers</h4>
-                    <div class="discount-group">
-                        <span class="group-range-display tier-one"><span class="low-number"></span> - <span class="high-number"></span> people</span>
-                        <div class="group-range"></div>
-                        {{ group_broadcast_form.tier_one_min }}
-                        {{ group_broadcast_form.tier_one_max }}
-                        <div class="group-description tier-one">
-                            <h4>description for this tier</h4>
-                            {{ group_broadcast_form.tier_one_desc }}
+
+                    {# SINGLE AND GROUP COUPON SPECIFIC  #}
+                    <div class="single-coupon quantity">
+                        <div class="coupon-description">
+                            <h4>coupon description (users see this)</h4>
+                            {{ single_broadcast_form.coupon_description }}
                         </div>
                     </div>
-                    <div class="discount-group extra" style="display:none;">
-                        <span class="group-range-display tier-two"><span class="low-number"></span> - <span class="high-number"></span> people</span>
-                        <div class="group-range"></div>
-                        {{ group_broadcast_form.tier_two_min }}
-                        {{ group_broadcast_form.tier_two_max }}
-                        <div class="group-description tier-two">
-                            <h4>description for this tier</h4>
-                            {{ group_broadcast_form.tier_two_desc }}
+                    <div class="group-coupon discount-tiers">
+                        <h4>discount tiers</h4>
+                        <div class="discount-group">
+                            <span class="group-range-display tier-one"><span class="low-number"></span> - <span class="high-number"></span> people</span>
+                            <div class="group-range"></div>
+                            {{ group_broadcast_form.tier_one_min }}
+                            {{ group_broadcast_form.tier_one_max }}
+                            <div class="group-description tier-one">
+                                <h4>description for this tier</h4>
+                                {{ group_broadcast_form.tier_one_desc }}
+                            </div>
+                        </div>
+                        <div class="discount-group extra" style="display:none;">
+                            <span class="group-range-display tier-two"><span class="low-number"></span> - <span class="high-number"></span> people</span>
+                            <div class="group-range"></div>
+                            {{ group_broadcast_form.tier_two_min }}
+                            {{ group_broadcast_form.tier_two_max }}
+                            <div class="group-description tier-two">
+                                <h4>description for this tier</h4>
+                                {{ group_broadcast_form.tier_two_desc }}
+                            </div>
+                        </div>
+                        <div class="add-tier">
+                            <button class="btn btn-normal">Click to add another tier</button>
                         </div>
                     </div>
-                    <div class="add-tier">
-                        <button class="btn btn-normal">Click to add another tier</button>
+                    <div class="clearfix"></div>
+                    {#  END SPECIFIC  #}
+
+                    <h4>coupon start date:</h4>
+                    {{ broadcast_form.coupon_valid_from_date|attr:"required" }}
+                    <h4>coupon end date:</h4>
+                    {{ broadcast_form.coupon_valid_to_date|attr:"required" }}
+                    <h4>coupon valid during what times</h4>
+                    {{ broadcast_form.coupon_valid_from_time|attr:"required" }}
+                    <h6 class="timepicker-div" style="padding:0px 10px;vertical-align:text-top;">to</h6>
+                    {{ broadcast_form.coupon_valid_to_time|attr:"required" }}
+                    <div class="boolean-fields">
+                        {{ broadcast_form.valid_all_day }}<span class="checkbox-text">{{ broadcast_form.valid_all_day.label }}</span>
+                        <span style="margin-left:30px;">
+                            {{ broadcast_form.one_per_customer }}
+                            <span class="checkbox-text">{{ broadcast_form.one_per_customer.label }}</span>
+                        </span>
                     </div>
-                </div>
-                <div class="clearfix"></div>
-                {#  END SPECIFIC  #}
-            
-                <h4>coupon start date:</h4>
-                {{ broadcast_form.coupon_valid_from_date|attr:"required" }}
-                <h4>coupon end date:</h4>
-                {{ broadcast_form.coupon_valid_to_date|attr:"required" }}
-                <h4>coupon valid during what times</h4>                
-                {{ broadcast_form.coupon_valid_from_time|attr:"required" }}                
-                <h6 class="timepicker-div" style="padding:0px 10px;vertical-align:text-top;">to</h6>                
-                {{ broadcast_form.coupon_valid_to_time|attr:"required" }}                                    
-                <div class="boolean-fields">
-                    {{ broadcast_form.valid_all_day }}<span class="checkbox-text">{{ broadcast_form.valid_all_day.label }}</span>
-                    <span style="margin-left:30px;">
-                        {{ broadcast_form.one_per_customer }}
-                        <span class="checkbox-text">{{ broadcast_form.one_per_customer.label }}</span>
-                    </span>
-                </div>
-                <div class="submit-div">
-                    <button value="" data-toggle="modal" data-target="#broadcast_confirm" class="btn btn-success btn-large broadcast-button">Broadcast Coupon<i class="icon-bullhorn"></i></button>
-                </div>
-                
-                {% include "portlets/popup_portlets/broadcast_coupon_confirm.html" with id="broadcast_confirm" hidden="True" %}            
-        </div>
+                    <div class="submit-div">
+                        <button value="" data-toggle="modal" data-target="#broadcast_confirm" class="btn btn-success btn-large broadcast-button">Broadcast Coupon<i class="icon-bullhorn"></i></button>
+                    </div>
+
+                    {% include "portlets/popup_portlets/broadcast_coupon_confirm.html" with id="broadcast_confirm" hidden="True" %}
+            </div>
         </form>
     </div>    
 </div>

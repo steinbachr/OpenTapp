@@ -1,5 +1,5 @@
-from barwatch import enums as e
-from barwatch.barportal.models import Bar, SingleCoupon, GroupCoupon, MobileUser, Menu, MenuItem
+from barportal import enums as e
+from barportal.models import Bar, SingleCoupon, GroupCoupon, MobileUser, Menu, MenuItem
 from rest_framework import serializers
 from rest_framework.serializers import SerializerMethodField
 

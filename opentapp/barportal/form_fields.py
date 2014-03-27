@@ -1,6 +1,6 @@
 from django import forms
-import barwatch.helpers as h
-import barwatch.enums as e
+import barportal.helpers as h
+import barportal.enums as e
 
 class AppTimeField(forms.Field):
     '''

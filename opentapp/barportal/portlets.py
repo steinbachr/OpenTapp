@@ -1,10 +1,10 @@
 from django.template import loader, Context, RequestContext
 from django.contrib.auth.models import User
-from barwatch.barportal import forms, models
-from barwatch.barportal.email import DrinkUpEmail
-from barwatch import enums as e 
-from barwatch import queries as q
-from barwatch import helpers as h
+from barportal import forms, models
+from barportal.email import DrinkUpEmail
+from barportal import enums as e
+from barportal import queries as q
+from barportal import helpers as h
 import datetime
 import operator
 import pdb

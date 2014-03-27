@@ -1,6 +1,6 @@
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import render_to_string
-from barwatch import helpers as h
+from barportal import helpers as h
 
 class DrinkUpEmail():
     def __init__(self, tpl_file, subject, to_emails, context={}):

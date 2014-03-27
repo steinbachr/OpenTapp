@@ -1,3 +1,13 @@
+/* copied whole-sale from https://gist.github.com/rca/1696408 */
+$.ajaxSetup({
+     beforeSend: function(xhr, settings) {
+         if (!(/^http:.*/.test(settings.url) || /^https:.*/.test(settings.url))) {
+             // Only send the token to relative URLs i.e. locally.
+             xhr.setRequestHeader("X-CSRFToken", $.cookie('csrftoken'));
+         }
+     }
+});
+
 $(document).ready(function() {
     $("select").selectBoxIt({showEffect: "fadeIn", showEffectSpeed: 200, hideEffect: "explode", hideEffectSpeed: 500});
     $('.time-select').each(function() {        

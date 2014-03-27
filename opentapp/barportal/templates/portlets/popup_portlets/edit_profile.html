@@ -5,18 +5,20 @@
 {% endblock %}
 {% block message %}
 <div class="edit-portlet">                 
-    <form class="basic-info" action="{% url barwatch.barportal.views.edit_profile user.id %}" method="post" enctype="multipart/form-data">
+    <form class="basic-info" action="{% url 'barportal.views.edit_profile' user.id %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
         {{ edit_bar_form }}
         <div class="clearfix"></div>
         <button type="submit" class="btn btn-success save">Save</button>
     </form>    
-    <form action="{% url barwatch.barportal.views.edit_profile user.id %}" method="post" class="form-inline">        
+    <form action="{% url 'barportal.views.edit_profile' user.id %}" method="post" class="form-inline">
+        {% csrf_token %}
         <div class="menu-desc">
             <h2>{{ bar.name }}</h2>
             <ul class="menu-item-list">
                 {% if menu_submitted %}
                     {% for menu_item in menu_submitted.menu_items %}
-                        <li><a href="{% url barwatch.barportal.views.remove_menu_item user.id %}" class="remove-one" data="{{ menu_item.id }}"><i class="icon-remove-circle"></i></a><span class="item-name">{{ menu_item.name }}</span><span class="item-price">${{ menu_item.price }}</span></li>
+                        <li><a href="{% url 'barportal.views.remove_menu_item' user.id %}" class="remove-one" data="{{ menu_item.id }}"><i class="icon-remove-circle"></i></a><span class="item-name">{{ menu_item.name }}</span><span class="item-price">${{ menu_item.price }}</span></li>
                     {% endfor %}
                 {% endif %}
                 <li class="menu-item">                    

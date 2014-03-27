@@ -3,11 +3,11 @@ import datetime
 import json
 from django.test.client import Client
 from pytz import timezone
-from barwatch import enums as e
-from barwatch import helpers as h
-from barwatch import queries as q
-from barwatch import location as loc
-from barwatch.barportal import models as m
+from barportal import enums as e
+from barportal import helpers as h
+from barportal import queries as q
+from barportal import location as loc
+from barportal import models as m
 
 class BaseTest(unittest.TestCase):
     BAR = {'name' : 'Test Bar', 'password' : 'test', 'long' : -71.0342, 'lat' : 42.2128, 'address' : "Boston, MA", 

@@ -33,7 +33,7 @@
                 <li {% if selected_tab == nav_tabs.STATS.verbose %}class="active"{% endif %}><a href="#tab-stats" data-toggle="tab"><i class="icon-cogs"></i>View Stats</a></li>
                 <li {% if selected_tab == nav_tabs.PAYMENTS.verbose %}class="active"{% endif %}><a href="#tab-payments" data-toggle="tab"><i class="icon-money"></i>Payments</a></li>
                 <li {% if selected_tab == nav_tabs.HELP.verbose %}class="active"{% endif %}><a href="#tab-help" data-toggle="tab"><i class="icon-question-sign"></i>Help</a></li>
-                <li><a href="{% url barwatch.barportal.views.logout_user %}"><i class="icon-signout"></i>Logout</a></li>
+                <li><a href="{% url 'barportal.views.logout_user' %}"><i class="icon-signout"></i>Logout</a></li>
             </ul>
         </div>
     </div>
