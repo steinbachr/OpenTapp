@@ -26,7 +26,16 @@
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/opentapp/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="13" selection-start="1213" selection-end="1213" vertical-scroll-proportion="-10.192307" vertical-offset="455" max-vertical-offset="1665">
+            <state line="96" column="0" selection-start="2386" selection-end="2386" vertical-scroll-proportion="0.0" vertical-offset="1014" max-vertical-offset="1755">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Procfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="0.023041476" vertical-offset="0" max-vertical-offset="651">
               <folding />
             </state>
           </provider>
@@ -54,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logged_in.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="logged_in.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/barportal/templates/pages/logged_in.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="14" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.07166124" vertical-offset="271" max-vertical-offset="885">
+            <state line="21" column="14" selection-start="1314" selection-end="1314" vertical-scroll-proportion="-1.8333334" vertical-offset="271" max-vertical-offset="885">
               <folding />
             </state>
           </provider>
@@ -73,7 +82,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/barportal/queries.py" />
         <option value="$PROJECT_DIR$/barportal/serializers.py" />
         <option value="$PROJECT_DIR$/barportal/tests.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
@@ -89,6 +97,7 @@
         <option value="$PROJECT_DIR$/barportal/templates/portlets/popup_portlets/edit_profile.html" />
         <option value="$PROJECT_DIR$/barportal/templates/portlets/bar_portlets/broadcast_coupon.html" />
         <option value="$PROJECT_DIR$/opentapp/settings.py" />
+        <option value="$PROJECT_DIR$/Procfile" />
       </list>
     </option>
   </component>
@@ -615,15 +624,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/barportal/helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="24" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.0" vertical-offset="517" max-vertical-offset="1605">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/barportal/templates/portlets/popup_portlets/edit_profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="8" selection-start="612" selection-end="628" vertical-scroll-proportion="0.34201956" vertical-offset="0" max-vertical-offset="675">
@@ -712,13 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/opentapp/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="13" selection-start="1213" selection-end="1213" vertical-scroll-proportion="-10.192307" vertical-offset="455" max-vertical-offset="1665">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/barportal/templates/portlets/bar_portlets/broadcast_coupon.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="687" selection-end="687" vertical-scroll-proportion="0.3664495" vertical-offset="0" max-vertical-offset="1230">
@@ -728,7 +721,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/barportal/templates/pages/logged_in.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="14" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.07166124" vertical-offset="271" max-vertical-offset="885">
+        <state line="21" column="14" selection-start="1314" selection-end="1314" vertical-scroll-proportion="-1.8333334" vertical-offset="271" max-vertical-offset="885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/opentapp/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="0" selection-start="2386" selection-end="2386" vertical-scroll-proportion="0.0" vertical-offset="1014" max-vertical-offset="1755">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="0.023041476" vertical-offset="0" max-vertical-offset="651">
           <folding />
         </state>
       </provider>
