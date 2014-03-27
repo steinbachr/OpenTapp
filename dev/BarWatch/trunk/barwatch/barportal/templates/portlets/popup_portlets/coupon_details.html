@@ -1,0 +1,29 @@
+{% extends 'portlets/popup_portlets/base.html' %}
+
+{% block header %}
+    <h3 class="coupon-details-header"></h3>
+{% endblock %}
+{% block message %}
+    <div class="data"><img src="{{ STATIC_URL }}images/ajax-loader.gif" /></div>
+    <script type="x-application/mustache" id="coupon_details_template">
+    {% templatetag openvariable %}=[[ ]]={% templatetag closevariable %}
+        <table>
+            <tr>
+                <th>Broadcast Date</th>
+                <td>[[broadcastDate]]</td>
+            </tr>
+            <tr>
+                <th>Active Dates</th>
+                <td>[[fromDate]] - [[toDate]]</td>
+            </tr>
+            <tr>
+                <th>Active Times</th>
+                <td>[[fromTime]] - [[toTime]]</td>
+            </tr>
+            <tr>
+                <th># of Redemptions</th>
+                <td>[[redemptions]]</td>
+            </tr>
+        </table>
+    </script>
+{% endblock %}

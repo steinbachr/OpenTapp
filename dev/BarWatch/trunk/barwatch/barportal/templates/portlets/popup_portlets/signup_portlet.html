@@ -1,0 +1,59 @@
+{% extends 'portlets/popup_portlets/base.html' %}
+
+{% load widget_tweaks %}
+
+{% block header %}
+    <h3>Signup for drinkUp</h3>
+{% endblock %}
+{% block message %}    
+    <form class="form-horizontal" method="post" id="signup-form" enctype="multipart/form-data">
+        <div class="step step0 current info-page">
+            <h2>What is drinkUp?</h2>
+            drinkUp is a promotional and social media platform that focuses exclusively 
+            on drink specials. You choose the specials that your bar offers, and patrons 
+            use the mobile app on their smartphones to access these specials as well as 
+            other bar information. Specials can be for anyone or only for groups of a specified 
+            size. Patrons connect with their friends through the mobile application and plan to 
+            linkUp and drinkUp at your bar!
+        </div>
+        <div class="step step1 basic-info">
+            <table>
+            {% for field in form.basic_info %}                
+                <tr>
+                    <td>
+                        <label>{{ field.label }}</label>                        
+                    </td>
+                    <td>
+                        <span class="required-asterisk" style="display: none;">*</span>
+                    </td>
+                    <td>
+                        {{ field|attr:"required" }}
+                    </td>
+                </tr>                
+            {% endfor %}
+            </table>
+        </div>
+        <div class="step step2 additional-info">
+            <table>
+                {% for field in form.additional_info %}
+                    <tr>
+                        <td>
+                            <label>{{ field.label }}</label>
+                            <span class="required-asterisk" style="display: none;">*</span>
+                        </td>
+                        <td>
+                            {{ field }}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>  
+        {{ form.form_name }}
+        <span class="btn btn-info prev" style="display: none;">Previous</span>
+        <input type="submit" value="Finished" style="display:none;" class="btn btn-success"/>
+        <span class="btn btn-info next">Next</span>        
+    </form>
+    {% include "portlets/misc_portlets/form_error.html" with id="form_error_popup" hidden="True" %}
+{% endblock %}
+{% block footer %}
+{% endblock %}

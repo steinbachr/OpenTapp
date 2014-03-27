@@ -1,0 +1,5 @@
+Email: {{ email }}
+Bar Name: {{ bar_name }}
+Bar Phone: {{ bar_phone }}
+Username: {{ username }}
+

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block css_files %}
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">
+    <link href="{{ STATIC_URL }}css/frontpage.less" rel="stylesheet/less" type="text/css" />    
+{% endblock %}
+{% block js_files %}    
+    <script type="text/javascript" src="{{ STATIC_URL }}js/frontpage.js"></script>    
+{% endblock %}  
+{% block title %}{{ app_name }}{% endblock %}
+{% block body %} 
+<div class="header">
+    <button class="btn btn-success" data-toggle="modal" data-target="#signup_popup">Sign Up<i class="icon-star"></i></button>
+    <button class="btn btn-primary" data-toggle="modal" data-target="#login_popup">Log In<i class="icon-signin"></i></button>
+</div>
+<div class="clearfix"></div>
+<div class="container">
+    <img src="{{ STATIC_URL }}images/logo_big.png" />
+    <div class="drinkup-teaser">
+        <h2>drink cheap, drink with friends, drinkUp</h2>
+    </div>
+    {% if signup_success %}
+    <div class="alert alert-success">
+        <h4>Thanks for signing up! We're reviewing you're submission and we'll get back to you ASAP (within the next 24 hours)</h4>
+    </div>
+    {% endif %}
+    {% include "portlets/popup_portlets/signup_portlet.html" with id="signup_popup" hidden=signup_hidden form=signup_form %}
+    {% include "portlets/popup_portlets/login_portlet.html" with id="login_popup" hidden=login_hidden form=login_form %}    
+</div>    
+{% endblock %}

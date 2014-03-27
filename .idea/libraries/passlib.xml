@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="passlib">
+    <CLASSES>
+      <root url="file:///Library/Python/2.7/site-packages/passlib" />
+      <root url="file:///Library/Python/2.7/site-packages/passlib-1.6.1-py2.7.egg-info" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

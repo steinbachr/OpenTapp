@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block css_files %}
+    <link href="{{ STATIC_URL }}css/stylesheet.less" rel="stylesheet/less" type="text/css"/>
+    <link href="{{ STATIC_URL }}css/plugins/jgrowl.css" rel="stylesheet" type="text/css" />    
+    <link href="{{ STATIC_URL }}css/plugins/bootstrap-tables.css" rel="stylesheet" type="text/css" />
+    <link href="{{ STATIC_URL }}css/plugins/prettify.css" rel="stylesheet" type="text/css" />
+    <link href="{{ STATIC_URL }}css/plugins/tablecloth.css" rel="stylesheet" type="text/css" />    
+{% endblock %}
+{% block js_files %}    
+    {#PLUGINS#}
+    <script type="text/javascript" src="{{ STATIC_URL }}js/plugins/jquery.cookie.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/plugins/jquery.jgrowl.js"></script>      
+    <script type="text/javascript" src="{{ STATIC_URL }}js/plugins/jquery.tablecloth.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/libraries/mustache.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/logged_in.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/input_menu.js"></script>    
+    <script type="text/javascript" src="{{ STATIC_URL }}js/coupon_details.js"></script>    
+{% endblock %}
+{% block title %}
+    Welcome {{ bar.name }}
+{% endblock %}
+{% block header %}{% endblock %}
+{% block body %}
+<body>    
+    <div class="navbar">
+        <div class="navbar-inner">            
+            <ul class="nav">
+                <li class="logo{% if selected_tab == nav_tabs.DASHBOARD.verbose %} active{% endif %}"><a href="#tab-dashboard" data-toggle="tab"><img src="{{ STATIC_URL }}/images/logo.png" style="height: 20px;"/></a></li>
+                <li {% if selected_tab == nav_tabs.BROADCAST.verbose %}class="active"{% endif %}><a href="#tab-deal" data-toggle="tab"><i class="icon-bolt"></i>Broadcast Deal</a></li>
+                <li {% if selected_tab == nav_tabs.QUEUE.verbose %}class="active"{% endif %}><a href="#tab-queue" data-toggle="tab"><i class="icon-reorder"></i>Queued Coupons</a></li>
+                <li {% if selected_tab == nav_tabs.PROFILE.verbose %}class="active"{% endif %}><a href="#tab-profile" data-toggle="tab"><i class="icon-pencil"></i>Bar Profile</a></li>
+                <li {% if selected_tab == nav_tabs.STATS.verbose %}class="active"{% endif %}><a href="#tab-stats" data-toggle="tab"><i class="icon-cogs"></i>View Stats</a></li>
+                <li {% if selected_tab == nav_tabs.PAYMENTS.verbose %}class="active"{% endif %}><a href="#tab-payments" data-toggle="tab"><i class="icon-money"></i>Payments</a></li>
+                <li {% if selected_tab == nav_tabs.HELP.verbose %}class="active"{% endif %}><a href="#tab-help" data-toggle="tab"><i class="icon-question-sign"></i>Help</a></li>
+                <li><a href="{% url barwatch.barportal.views.logout_user %}"><i class="icon-signout"></i>Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">        
+        <div class="tab-content">
+            {% for portlet in portlets %}
+            <div class="tab-pane{% if portlet.tab_id == selected_tab %} active{% endif %}" id="{{ portlet.tab_id }}">
+                {{ portlet.render }}                        
+            </div>                
+            {% endfor %}        
+        </div>        
+        {% include "portlets/popup_portlets/broadcast_coupon_response.html" with id="broadcast_response" hidden=broadcast_hidden success=broadcast_success %}
+        {% include "portlets/popup_portlets/coupon_details.html" with id="coupon_details" hidden="true" %}
+    </div>
+</body>
+{% endblock %}
+{% block footer %}{% endblock %}

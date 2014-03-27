@@ -1,0 +1,51 @@
+<?Infragistics.Models format="xaml" version="17"?>
+<Page xmlns="http://prototypes.infragistics.com/"
+                                                          Id="7e21f4f1-0421-445b-9256-2ee3586bc705">
+    <Page.Content>
+        <Content Width="480" Height="800" Background="White" Id="027144a8-5512-4103-ad3d-3ce6f282c02c">
+            <Content.Layers>
+                <Layer Layout="Stretch" Id="a2b6186a-9aef-4f23-a49c-3f4979a382a0" Panel.Layout="Stretch" />
+            </Content.Layers>
+        </Content>
+    </Page.Content>
+    <Page.Scenes>
+        <Scene Title="Start" Created="06/02/2013 15:48:53" Id="c45347f7-bb97-4a70-9ed1-0bfd2522c64d">
+            <Scene.KeyFrames>
+                <KeyFrame Id="81d46f4a-99ec-42f0-b381-860cecddf429">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="a2b6186a-9aef-4f23-a49c-3f4979a382a0">
+                            <Add.Item>
+                                <Button Text="Home" Foreground="#FF282828" FontSize="20" FontStyle="Normal" Id="2af1f333-85bf-465b-9301-6738e3b2899d" Panel.Bounds="0,0,122{5,2147483647},75{5,2147483647}">
+                                    <Button.Click>
+                                        <CommandNavigate Screen="/Homescreen.screen" State="af967748-0566-4c9f-b084-3be3365e1b0e" Created="06/02/2013 15:59:58" />
+                                    </Button.Click>
+                                </Button>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="a2b6186a-9aef-4f23-a49c-3f4979a382a0">
+                            <Add.Item>
+                                <Button Text="List" Foreground="#FF282828" FontSize="20" FontStyle="Normal" Id="a852e75c-5349-4078-b3d7-e52dcd34ef2b" Panel.Bounds="358,0,122{5,2147483647},75{5,2147483647}">
+                                    <Button.Click>
+                                        <CommandNavigate Screen="/List view screen.screen" State="1c745caa-6c27-473d-be83-2bc05ec05160" Created="06/02/2013 16:00:19" />
+                                    </Button.Click>
+                                </Button>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="a2b6186a-9aef-4f23-a49c-3f4979a382a0">
+                            <Add.Item>
+                                <Image SourcePath="assets/drinkUp_logo_11-26-12.jpg" Id="a1b229d3-c03b-40ea-bac8-8629ddc393a9" Panel.Bounds="121,39,224{5,2147483647},142{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="a2b6186a-9aef-4f23-a49c-3f4979a382a0">
+                            <Add.Item>
+                                <Image SourcePath="assets/mobile_map.png" Id="1240a232-c141-411f-aa6a-a87b6553ab8a" Panel.Bounds="-3,147,483{5,2147483647},653{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Set Property="Content.Width" Value="480" Target="027144a8-5512-4103-ad3d-3ce6f282c02c" />
+                        <Set Property="Content.Height" Value="800" Target="027144a8-5512-4103-ad3d-3ce6f282c02c" />
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </Page.Scenes>
+</Page>

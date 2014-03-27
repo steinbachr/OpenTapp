@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="django">
+    <CLASSES>
+      <root url="file:///Library/Python/2.7/site-packages/django" />
+      <root url="file:///Library/Python/2.7/site-packages/Django-1.4.1-py2.7.egg-info" />
+      <root url="file:///Library/Python/2.7/site-packages/geopy-0.95.pre_r157-py2.7.egg" />
+      <root url="file:///Library/Python/2.7/site-packages/MySQL_python-1.2.3-py2.7.egg-info" />
+      <root url="file:///Library/Python/2.7/site-packages/MySQLdb" />
+      <root url="file:///Library/Python/2.7/site-packages/pip-1.1-py2.7.egg" />
+      <root url="file:///Library/Python/2.7/site-packages/pytest-2.3.4-py2.7.egg-info" />
+      <root url="file:///Library/Python/2.7/site-packages/South-0.7.6-py2.7.egg" />
+      <root url="file:///Library/Python/2.7/site-packages/twisted" />
+      <root url="jar:///Library/Python/2.7/site-packages/geopy-0.93dev_r84-py2.7.egg!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

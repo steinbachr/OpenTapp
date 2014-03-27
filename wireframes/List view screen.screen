@@ -1,0 +1,180 @@
+<?Infragistics.Models format="xaml" version="17"?>
+<Page xmlns="http://prototypes.infragistics.com/"
+                                                          Id="397fd89c-7d19-4036-a799-edc88faba6d9">
+    <Page.Content>
+        <Content Width="480" Height="800" Background="White" Id="d88dc348-8b95-4d67-8a8d-b15694a09a62">
+            <Content.Layers>
+                <Layer Layout="Stretch" Id="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14" Panel.Layout="Stretch" />
+            </Content.Layers>
+        </Content>
+    </Page.Content>
+    <Page.Scenes>
+        <Scene Title="Start" Created="06/02/2013 15:02:48" Id="1c745caa-6c27-473d-be83-2bc05ec05160">
+            <Scene.KeyFrames>
+                <KeyFrame Id="43868a62-3663-49d9-ab35-641b1670cdd2">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Button Text="Map" Foreground="#FF282828" FontSize="20" FontStyle="Normal" Id="20d7d0f1-aed1-4fe9-b444-9d2e2d061ac0" Panel.Bounds="358,0,122{5,2147483647},75{5,2147483647}">
+                                    <Button.Click>
+                                        <CommandNavigate Screen="/Map.screen" State="c45347f7-bb97-4a70-9ed1-0bfd2522c64d" Created="06/02/2013 15:59:43" />
+                                    </Button.Click>
+                                </Button>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Button Text="Home" Foreground="#FF282828" FontSize="20" FontStyle="Normal" Id="22c1b951-7ea8-482c-b16e-fe2547efe095" Panel.Bounds="0,0,122{5,2147483647},75{5,2147483647}">
+                                    <Button.Click>
+                                        <CommandNavigate Screen="/Homescreen.screen" State="af967748-0566-4c9f-b084-3be3365e1b0e" Created="06/02/2013 15:44:02" />
+                                    </Button.Click>
+                                </Button>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Before="20d7d0f1-aed1-4fe9-b444-9d2e2d061ac0" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Rectangle Background="#FF3BAF4A" Id="f60749c9-86e4-418f-b8b7-5b5fd78c348e" Panel.Bounds="0,186,480{5,2147483647},80{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Rectangle Background="White" Id="945ef162-719f-4b7e-8c91-0a9d3f885ed0" Panel.Bounds="0,266,480{5,2147483647},80{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Rectangle Background="#FF3BAF4A" Id="d3c06aa6-98cf-4677-b4ec-7eef603af89d" Panel.Bounds="0,346,480{5,2147483647},80{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Rectangle Background="White" Id="3049a9ea-70b3-42b7-8e35-f9f84557440e" Panel.Bounds="0,426,480{5,2147483647},80{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Rectangle Background="#FF3BAF4A" Id="abb68511-9995-4087-94f5-13264e3feb00" Panel.Bounds="0,506,480{5,2147483647},80{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Rectangle Background="White" Id="5abf0431-6e4d-4b4c-bca5-28be0c1f9078" Panel.Bounds="0,584,480{5,2147483647},80{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Rectangle Background="White" Id="e13765cd-24c8-45fe-8c60-e04e151e61c3" Panel.Bounds="0,664,480{5,2147483647},80{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Label Text="John's Bar" Foreground="#FF282828" FontSize="24" FontStyle="Normal|Bold" Id="80240949-8f69-4da7-bc20-921124e9fdea" Panel.Bounds="12,205,0*{5,2147483647},0*{5,2147483647}">
+                                    <Label.Click>
+                                        <CommandNavigate Screen="/Bar Profile.screen" State="06a6dfc3-d5f1-466b-a0a5-4657d1f54f04" Created="06/02/2013 16:31:18" />
+                                    </Label.Click>
+                                </Label>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Label Text=".4 Miles" Foreground="#FF282828" FontSize="16" FontStyle="Normal" Id="5fa301e9-b096-4a39-a7e7-08c5ee9b0aa4" Panel.Bounds="415,242,0*{5,2147483647},0*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Label Text="Ben Bar" Foreground="#FF282828" FontSize="24" FontStyle="Normal|Bold" Id="be69afc4-a2f4-4388-bb5e-59f511644b61" Panel.Bounds="12,289,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Label Text="Tim Bar" Foreground="#FF282828" FontSize="24" FontStyle="Normal|Bold" Id="cb8aeb3e-8911-4a37-a1ac-8b0bce9a11c2" Panel.Bounds="12,369,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Label Text="Bob Bar" Foreground="#FF282828" FontSize="24" FontStyle="Normal|Bold" Id="817d51e4-b09f-43ac-9bd9-6a3883c3aec7" Panel.Bounds="12,449,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Label Text="Rae Bar" Foreground="#FF282828" FontSize="24" FontStyle="Normal|Bold" Id="d0e5675e-6c76-4f9f-84b5-c0f9bccc1f3f" Panel.Bounds="12,529,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Label Text="Jean Bar" Foreground="#FF282828" FontSize="24" FontStyle="Normal|Bold" Id="514ad7cd-eb3b-4cb3-926e-23b581549187" Panel.Bounds="12,607,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Label Text=".6 Miles" Foreground="#FF282828" FontSize="16" FontStyle="Normal" Id="0f16d410-edcb-47e4-9f1d-c0425c6a3688" Panel.Bounds="415,318,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Label Text=".8 Miles" Foreground="#FF282828" FontSize="16" FontStyle="Normal" Id="df361103-0563-4d48-8966-10e654d05124" Panel.Bounds="415,394,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Label Text="1.1 Miles" Foreground="#FF282828" FontSize="16" FontStyle="Normal" Id="157c0c1c-bb47-48f8-b20e-43f2379f7df3" Panel.Bounds="406,474,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Label Text="1.3 Miles" Foreground="#FF282828" FontSize="16" FontStyle="Normal" Id="4f6473a7-790b-4b30-b54d-6e815c7f04bc" Panel.Bounds="406,555,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Label Text="1.5 Miles" Foreground="#FF282828" FontSize="16" FontStyle="Normal" Id="b43ca8c5-9ae0-42ea-8ef5-5d831bca35a1" Panel.Bounds="406,635,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Label Text="881 Willivee Drive, Atlanta, Ga 30033" Foreground="#FF282828" FontSize="14" FontStyle="Normal" Id="efb8f518-0002-49f2-a231-31dab6e9fe59" Panel.Bounds="4,242,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Label Text="921 Willivee Drive, Atlanta, Ga 30033" Foreground="#FF282828" FontSize="14" FontStyle="Normal" Id="de8f4417-6842-45fd-9b7a-27e3f901c6f9" Name="981 Willivee Drive, ..." Panel.Bounds="4,324,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Label Text="1021 Willivee Drive, Atlanta, Ga 30033" Foreground="#FF282828" FontSize="14" FontStyle="Normal" Id="1905bc51-a0a6-4d9f-96b9-99669cb9a665" Name="981 Willivee Drive, ..." Panel.Bounds="4,406,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Label Text="1061 Willivee Drive, Atlanta, Ga 30033" Foreground="#FF282828" FontSize="14" FontStyle="Normal" Id="d529b16f-533f-4093-8212-bd2148f83ff6" Name="981 Willivee Drive, ..." Panel.Bounds="4,487,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Label Text="2061 Willivee Drive, Atlanta, Ga 30033" Foreground="#FF282828" FontSize="14" FontStyle="Normal" Id="f6cf8833-d562-4dcc-8783-8c5c0a0c942a" Name="981 Willivee Drive, ..." Panel.Bounds="4,563,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Label Text="3061 Willivee Drive, Atlanta, Ga 30033" Foreground="#FF282828" FontSize="14" FontStyle="Normal" Id="a3258ab6-b9b6-423c-9bf0-19787fbf18df" Name="981 Willivee Drive, ..." Panel.Bounds="4,644,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Link Text="Filter" Foreground="#FF0066CC" FontSize="20" FontStyle="Normal|Underline" Id="4e570715-7899-4d68-9ed5-3b16a009e9de" Panel.Bounds="429,157,0*{5,2147483647},0*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="b069dfd9-cbc1-4404-8ab2-3fcae71e0c14">
+                            <Add.Item>
+                                <Image SourcePath="assets/drinkUp_logo_11-26-12.jpg" Id="02a46901-05a8-4494-a677-9395cec442cc" Panel.Bounds="121,39,224{5,2147483647},142{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Set Property="Content.Height" Value="800" Target="d88dc348-8b95-4d67-8a8d-b15694a09a62" />
+                        <Set Property="Content.Width" Value="480" Target="d88dc348-8b95-4d67-8a8d-b15694a09a62" />
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </Page.Scenes>
+</Page>

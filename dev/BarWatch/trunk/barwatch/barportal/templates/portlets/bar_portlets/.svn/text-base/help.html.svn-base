@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="span12 lead tab-content-header" >
+        Help for all your drinkUp needs
+    </div>
+</div>
+<div class="row">
+    <div class="span12" >
+        <div class="accordion default-hidden" id="help_topics">
+            <div class="first accordion-group" style="width: 99%;">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#help_topics" href="#help_one">
+                        How do broadcasting coupons work?<span><i class="icon-caret-up up"></i><i class="icon-caret-down down" style="display:none;"></i></span>
+                    </a>
+                </div>
+                <div id="help_one" class="accordion-body collapse in">
+                    <div class="accordion-inner">
+                        tthis is a test
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#help_topics" href="#help_two">
+                        How will I be billed by drinkUp?<span><i class="icon-caret-up up" style="display:none;"></i><i class="icon-caret-down down"></i></span>
+                    </a>
+                </div>
+                <div id="help_two" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                        this is a test
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#help_topics" href="#help_three">
+                        Is there a best way to reach you guys?<span><i class="icon-caret-up up" style="display:none;"></i><i class="icon-caret-down down"></i></span>
+                    </a>
+                </div>
+                <div id="help_three" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                        this is a test
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

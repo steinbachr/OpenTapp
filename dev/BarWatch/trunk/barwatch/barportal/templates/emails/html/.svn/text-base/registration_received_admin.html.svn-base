@@ -1,0 +1,25 @@
+<div style="margin: 70px;">
+    <table cellpadding="15">
+        <thead>
+        <th>Email</th>
+        <th>Bar Name</th>
+        <th>Bar Phone</th>
+        <th>Username</th>
+        </thead>
+        <tr>
+            <td>
+                {{ email }}
+            </td>
+            <td>
+                {{ bar_name }}
+            </td>
+            <td>
+                {{ bar_phone }}
+            </td>
+            <td>
+                {{ username }}
+            </td>
+        </tr>
+    </table>
+    {% if menu_submitted %}<span style="font-size:smaller;font-style: italic;">*Menu submitted and awaiting entry</span>{% endif %}
+</div>

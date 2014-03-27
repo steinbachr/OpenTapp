@@ -1,0 +1,58 @@
+{% load custom_tags %}
+
+<div class="row">
+    <div class="span12 lead tab-content-header" >
+        Hey there {{ bar.name }}, this is your dashboard
+    </div>
+</div>
+<div class="row dashboard">
+    <div class="span6 offset1">            
+        <div class="dashboard-box prev-coupons row">
+            <h3>Previous coupons published</h3>
+            <ol>
+                {% for coupon in last_five %}
+                    <li>{% single_coupon_details coupon %}</li>
+                {% endfor %}
+            </ol>
+        </div>
+        <div class="dashboard-box recurring-coupons row">
+            <h3>Your recurring coupons</h3>
+            <h2>Coming Soon!</h2>
+        </div>            
+    </div>
+    <div class="span4" style="margin-left: 50px;">                          
+        <div class="dashboard-box most-redeemed row">            
+            <h3>Your most redeemed coupon</h3>
+            <h5><i class="icon-star"></i>{% if most_redeemed %}{{ most_redeemed.coupon_description }}: {{ most_redeemed.num_redeemed }} redemptions{% else %}No coupons redeemed..yet{% endif %}</h5>
+        </div>
+        <div class="dashboard-box most-redeemed row">
+            <h3>Your active coupons</h3>
+            <div style="padding-left:20px;">
+                <h5>single coupons</h5>
+                {% if active_single_coupons %}
+                <ul>                
+                    {% for coupon in active_single_coupons %}
+                        <li>
+                            {% single_coupon_details coupon %}
+                        </li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                    No single coupons.
+                {% endif %}
+    
+                <h5>group coupons</h5>            
+                {% if active_group_coupons %}
+                <ul>
+                    {% for coupon in active_group_coupons %}
+                        <li>{% group_coupon_details coupon %}</li>
+                    {% endfor %}            
+                </ul>
+                {% else %}
+                    No group coupons.
+                {% endif %}
+            </div>
+        </div>
+    </div>    
+</div>
+

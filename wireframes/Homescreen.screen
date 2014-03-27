@@ -1,0 +1,63 @@
+<?Infragistics.Models format="xaml" version="17"?>
+<Page xmlns="http://prototypes.infragistics.com/"
+                                                          Id="50661c2f-c086-40bc-a31c-c2526f069c5a">
+    <Page.Content>
+        <Content Width="480" Height="800" Background="White" Id="a2979741-771a-47e1-a61b-861dd204ceea">
+            <Content.Layers>
+                <Layer Layout="Stretch" Id="e078731e-5152-470e-9333-080e0498c701" Panel.Layout="Stretch" />
+            </Content.Layers>
+        </Content>
+    </Page.Content>
+    <Page.Scenes>
+        <Scene Title="Start" Created="06/02/2013 15:35:46" Id="af967748-0566-4c9f-b084-3be3365e1b0e">
+            <Scene.KeyFrames>
+                <KeyFrame Id="884e12a8-7077-4a96-9925-1f8e705bb44a">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="e078731e-5152-470e-9333-080e0498c701">
+                            <Add.Item>
+                                <Title Text="Drinkup" Foreground="#FF4F8ABD" FontSize="34" FontStyle="Normal" Id="e612cc4a-8b0e-442e-8894-c9b7c6bb7497" Panel.Bounds="165,102,128*,47*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="e078731e-5152-470e-9333-080e0498c701">
+                            <Add.Item>
+                                <TextBox Text="Find Bars Near Me" Foreground="#FF282828" FontSize="22" FontStyle="Normal" Id="e6ee6037-6637-4fbc-927d-ef1d64347041" Panel.Bounds="119,179,232{5,2147483647},0*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="e078731e-5152-470e-9333-080e0498c701">
+                            <Add.Item>
+                                <Title Text="Drinking Buddies" Foreground="#FF282828" FontSize="34" FontStyle="Normal" Id="ebb9504d-97f3-4d62-8dca-ba6f48924b4c" Panel.Bounds="103,280,5*{5,2147483647},5*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="e078731e-5152-470e-9333-080e0498c701">
+                            <Add.Item>
+                                <Title Text="My Deals" Foreground="#FF282828" FontSize="34" FontStyle="Normal" Id="d2eb6084-31ed-4560-aead-d8061b069432" Panel.Bounds="148,361,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="e078731e-5152-470e-9333-080e0498c701">
+                            <Add.Item>
+                                <Title Text="Favorite Bars" Foreground="#FF282828" FontSize="34" FontStyle="Normal" Id="f90343a3-a499-4ff6-a092-2bd54475029d" Panel.Bounds="116,433,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="e078731e-5152-470e-9333-080e0498c701">
+                            <Add.Item>
+                                <Title Text="Notifications" Foreground="#FF282828" FontSize="34" FontStyle="Normal" Id="aba9f646-b574-4394-9644-909a85cb452f" Panel.Bounds="128,513,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="e078731e-5152-470e-9333-080e0498c701">
+                            <Add.Item>
+                                <Title Text="Settings" Foreground="#FF282828" FontSize="34" FontStyle="Normal" Id="fec5da4a-e7b3-412c-bfd6-f9e4f42d86dc" Panel.Bounds="176,574,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="e078731e-5152-470e-9333-080e0498c701">
+                            <Add.Item>
+                                <Image SourcePath="assets/Screenshot_2013-02-21-18-13-32.png" Id="278eca25-d551-4773-9191-07b70cab9070" Panel.Bounds="10,10,480{5,2147483647},997{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Set Property="Content.Width" Value="480" Target="a2979741-771a-47e1-a61b-861dd204ceea" />
+                        <Set Property="Content.Height" Value="800" Target="a2979741-771a-47e1-a61b-861dd204ceea" />
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </Page.Scenes>
+</Page>

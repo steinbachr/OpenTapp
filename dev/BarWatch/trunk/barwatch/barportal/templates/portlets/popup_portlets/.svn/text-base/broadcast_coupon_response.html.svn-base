@@ -1,0 +1,9 @@
+{% extends 'portlets/popup_portlets/base.html' %}
+
+{% block header %}
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+    <h3>{% if success %}Broadcast worked!{% else %}Broadcast failed :({% endif %}</h3>
+{% endblock %}
+{% block message %}
+    {% if success %}Check your queued coupons for details of your published coupon{% else %}we've been sent the failure and will resolve it as soon as possible, sorry!{% endif %}
+{% endblock %}

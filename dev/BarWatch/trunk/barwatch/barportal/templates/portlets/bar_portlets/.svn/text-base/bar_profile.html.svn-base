@@ -1,0 +1,42 @@
+<div class="profile-portlet row">
+    {% load staticfiles %}
+    <script type="text/javascript" src="{% static "js/bar_profile.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/input_menu.js" %}"></script>
+
+    <div class="span12 lead tab-content-header" >
+        {{ bar.name }} At A Glance
+    </div>
+    <div class="span12 profile">        
+        <img src="{% if bar.cover_photo %}{{ bar.cover_photo.url }}{% endif %}" class="span4"/>
+        <div class="span7 profile-info">
+            <h3>{{ bar.name }}</h3>
+            <div style="font-style: italic; padding: 10px;">{% if bar.description %}"{{ bar.description }}"{% else %}[Missing description]{% endif %}</div>
+            <div>Open from {{ bar.hours_from }} till {{ bar.hours_to }}</div>
+            <div>Kitchen hours are {{ bar.kitchen_hours_from }} to {{ bar.kitchen_hours_to }}</div>
+            <div>Phone on file: {{ bar.phone }}</div>
+            <div>
+                {% if bar.tvs %}
+                People can catch the big game at your bar because you <b>do</b> have tv's
+                {% else %}
+                Currently it appears that your bar does <b>not</b> have tv's, if this is a mistake you can edit your info below
+                {% endif %}
+            </div>
+            <div>
+                {% if bar.has_menu %}
+                    <div class="bar-menu">
+                        <h4>Menu</h4>
+                        <ol>
+                        {% for item in bar.menu.menu_items %}
+                        <li>{{ item.name }} - ${{ item.price }}</li>
+                        {% endfor %}
+                        </ol>
+                    </div>
+                {% else %}
+                    <h4>No Menu Submitted..yet</h4>
+                {% endif %}
+            </div>
+            <button class="btn btn-info edit-info" data-toggle="modal" data-target="#edit_popup">Edit Information</button>
+        </div>                
+    </div>            
+</div>
+{% include 'portlets/popup_portlets/edit_profile.html' with hidden="true" id="edit_popup" %}

@@ -1,0 +1,89 @@
+{% load custom_tags %}
+
+<div class="row">
+    <div class="span12 lead tab-content-header" >
+        You have published a total of {{ total_issued }} coupons and {{ total_redeemed }} have been redeemed so far.
+    </div>
+</div>
+<div class="row">
+    <div class="span12" >
+        {% if queued_single_coupons %}
+            <h3>Single Deals</h3>
+            <table class="queued-coupons" cellpadding="20px">
+                <thead>
+                <th>
+                    Description
+                </th>
+                <th>
+                    Date Range
+                </th>
+                <th>
+                    Time Range
+                </th>
+                <th>
+                    Num Redeemed
+                </th>
+                </thead>
+                {% for coupon in queued_single_coupons %}
+                    <tr{% if coupon.is_active %} class="success"{% endif %}>                        
+                        <td>
+                            {% single_coupon_details coupon %}
+                        </td>
+                        <td>
+                            {{ coupon.from_date }} - {{ coupon.to_date }}
+                        </td>
+                        <td>
+                            {{ coupon.from_time }} till {{ coupon.to_time }}
+                        </td>
+                        <td>
+                            {{ coupon.num_redeemed }}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+            {% if queued_group_coupons %}
+                <h3>Group Deals</h3>
+                <table class="queued-coupons" cellpadding="20px">
+                    <thead>
+                    <th>
+                        Description
+                    </th>
+                    <th>
+                        Date Range
+                    </th>
+                    <th>
+                        Time Range
+                    </th>
+                    <th>
+                        Tier 1 (people) 
+                    </th>
+                    <th>
+                        Tier 2 (people)
+                    </th>
+                    </thead>
+                    {% for coupon in queued_group_coupons %}
+                        <tr{% if coupon.is_active %} class="success"{% endif %}>
+                            <td>
+                                {% group_coupon_details coupon %}
+                            </td>
+                            <td>
+                                {{ coupon.from_date }} - {{ coupon.to_date }}
+                            </td>
+                            <td>
+                                {{ coupon.from_time }} till {{ coupon.to_time }}
+                            </td>
+                            <td>
+                                {{ coupon.tier_one_min }} - {{ coupon.tier_one_max }}
+                            </td>
+                            <td>
+                                {% if coupon.tier_two_min %}{{ coupon.tier_two_min }} - {{ coupon.tier_two_max }}{% else %}N/A{% endif %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </table>
+                {% endif %}
+        {% else %}
+            <h2>No coupons currently queued</h2>
+        {% endif %}    
+    </div>
+</div>

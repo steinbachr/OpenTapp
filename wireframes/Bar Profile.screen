@@ -1,0 +1,84 @@
+<?Infragistics.Models format="xaml" version="17"?>
+<Page xmlns="http://prototypes.infragistics.com/"
+                                                          Id="95d15e11-ff65-4fd9-b71e-ff7f74cf1eb4">
+    <Page.Content>
+        <Content Width="480" Height="800" Background="White" Id="975ad69f-c5ac-41b7-82f5-b9945e9affbf">
+            <Content.Layers>
+                <Layer Layout="Stretch" Id="aad84a91-421b-4538-9bd7-c7e110650335" Panel.Layout="Stretch" />
+            </Content.Layers>
+        </Content>
+    </Page.Content>
+    <Page.Scenes>
+        <Scene Title="Start" Created="06/02/2013 16:08:39" Id="06a6dfc3-d5f1-466b-a0a5-4657d1f54f04">
+            <Scene.KeyFrames>
+                <KeyFrame Id="01a83c92-9780-4093-ba2b-f87626512cf2">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="aad84a91-421b-4538-9bd7-c7e110650335">
+                            <Add.Item>
+                                <Button Text="Home" Foreground="#FF282828" FontSize="20" FontStyle="Normal" Id="ccadfff9-9de8-409a-8f16-565e235b0e39" Panel.Bounds="0,0,122{5,2147483647},75{5,2147483647}">
+                                    <Button.Click>
+                                        <CommandNavigate Screen="/Homescreen.screen" State="af967748-0566-4c9f-b084-3be3365e1b0e" Created="06/02/2013 16:10:40" />
+                                    </Button.Click>
+                                </Button>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="aad84a91-421b-4538-9bd7-c7e110650335">
+                            <Add.Item>
+                                <Button Text="Back" Foreground="#FF282828" FontSize="20" FontStyle="Normal" Id="aa70c902-f84e-46e1-aabf-5ade759782b1" Panel.Bounds="358,0,122{5,2147483647},75{5,2147483647}">
+                                    <Button.Click>
+                                        <CommandNavigate Screen="/List view screen.screen" State="1c745caa-6c27-473d-be83-2bc05ec05160" Created="06/02/2013 16:10:47" />
+                                    </Button.Click>
+                                </Button>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="aad84a91-421b-4538-9bd7-c7e110650335">
+                            <Add.Item>
+                                <Image SourcePath="assets/drinkUp_logo_11-26-12.jpg" Id="dbb2ac35-ac18-4f5c-9bed-b209260fea53" Panel.Bounds="121,39,224{5,2147483647},142{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="aad84a91-421b-4538-9bd7-c7e110650335">
+                            <Add.Item>
+                                <Title Text="John's Bar" Foreground="#FF282828" FontSize="34" FontFamily="Arial Black" FontStyle="Normal" Id="34c76f6f-29d2-4190-9e97-9fe17b26aa3a" Panel.Bounds="134,186,0*{5,2147483647},0*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="aad84a91-421b-4538-9bd7-c7e110650335">
+                            <Add.Item>
+                                <Link Text="See Current Deals" Foreground="#FF0066CC" FontSize="18" FontStyle="Normal|Underline" Id="4f412888-b58a-445f-bcc1-ef298c1dc816" Panel.Bounds="162,254,0*{5,2147483647},0*{5,2147483647}">
+                                    <Link.Click>
+                                        <CommandNavigate Screen="/Current Deals John's Bar.screen" State="53554ca8-08eb-4d01-8669-158951155886" Created="06/02/2013 16:43:08" />
+                                    </Link.Click>
+                                </Link>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="aad84a91-421b-4538-9bd7-c7e110650335">
+                            <Add.Item>
+                                <Image SourcePath="assets/Brickstore.jpg" Id="8914bc94-413c-4b09-bb24-7cf1a8da1c24" Panel.Bounds="18,383,442{5,2147483647},258{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="aad84a91-421b-4538-9bd7-c7e110650335">
+                            <Add.Item>
+                                <Label Text="Hours: 10:00 pm - 2:00 AM" Foreground="#FF282828" FontSize="14" FontStyle="Normal" Id="ef1b96dc-d9ff-4d9e-8d71-2b73df0371df" Panel.Bounds="37,325,0*{5,2147483647},0*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="aad84a91-421b-4538-9bd7-c7e110650335">
+                            <Add.Item>
+                                <Label Text="Address: 881 Willivee Drive, Atlanta, GA 30342" Foreground="#FF282828" FontSize="14" FontStyle="Normal" Id="fe71d717-58ed-4d98-8501-3bbc6ddf09d8" Panel.Bounds="37,354,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="aad84a91-421b-4538-9bd7-c7e110650335">
+                            <Add.Item>
+                                <Link Text="Upcoming Deals" Foreground="#FF0066CC" FontSize="18" FontStyle="Normal|Underline" Id="de573585-c5ea-4976-9358-bbf99dabddd6" Panel.Bounds="169,284,0*,0*">
+                                    <Link.Click>
+                                        <CommandNavigate Screen="/Upcoming Deals John's Bar.screen" State="5d9c2c3b-50bc-4495-a3ca-9009b9297e19" Created="06/03/2013 00:06:37" />
+                                    </Link.Click>
+                                </Link>
+                            </Add.Item>
+                        </Add>
+                        <Set Property="Content.Width" Value="480" Target="975ad69f-c5ac-41b7-82f5-b9945e9affbf" />
+                        <Set Property="Content.Height" Value="800" Target="975ad69f-c5ac-41b7-82f5-b9945e9affbf" />
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </Page.Scenes>
+</Page>

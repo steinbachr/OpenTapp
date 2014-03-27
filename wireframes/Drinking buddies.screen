@@ -1,0 +1,68 @@
+<?Infragistics.Models format="xaml" version="17"?>
+<Page xmlns="http://prototypes.infragistics.com/"
+                                                          Id="b7346955-a1f8-482a-8133-c32b4357547f">
+    <Page.Content>
+        <Content Width="480" Height="800" Background="White" Id="893dbfd4-7b7d-41cd-b74e-2412ec0d2668">
+            <Content.Layers>
+                <Layer Layout="Stretch" Id="94050a99-a92a-4942-8ece-b07f4efef3a2" Panel.Layout="Stretch" />
+            </Content.Layers>
+        </Content>
+    </Page.Content>
+    <Page.Scenes>
+        <Scene Title="Start" Created="06/02/2013 18:05:48" Id="bd0ffbb8-ca53-464f-9849-e03f030dac05">
+            <Scene.KeyFrames>
+                <KeyFrame Id="4ae54355-b186-49e5-b768-e7beb3abfe22">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="94050a99-a92a-4942-8ece-b07f4efef3a2">
+                            <Add.Item>
+                                <Button Text="Home" Foreground="#FF282828" FontSize="20" FontStyle="Normal" Id="574d8bc2-0b30-4e39-b5ad-0d8f0e01a3ae" Panel.Bounds="0,0,122{5,2147483647},75{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="94050a99-a92a-4942-8ece-b07f4efef3a2">
+                            <Add.Item>
+                                <Button Text="Back" Foreground="#FF282828" FontSize="20" FontStyle="Normal" Id="6f59737c-f745-4893-9a29-750bd87c7e53" Panel.Bounds="358,0,122{5,2147483647},75{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="94050a99-a92a-4942-8ece-b07f4efef3a2">
+                            <Add.Item>
+                                <Image SourcePath="assets/drinkUp_logo_11-26-12.jpg" Id="ffd2ffe8-590e-49db-ae85-5fa2c754e7e8" Panel.Bounds="121,39,224{5,2147483647},142{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="94050a99-a92a-4942-8ece-b07f4efef3a2">
+                            <Add.Item>
+                                <Image SourcePath="assets/drinking buddies.JPG" Id="5d9c8f3b-9f9d-4541-8ef0-2b3ba252a7c0" Panel.Bounds="20,282,74{5,2147483647},66{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="94050a99-a92a-4942-8ece-b07f4efef3a2">
+                            <Add.Item>
+                                <Title Text="Drinking Buddies" Foreground="#FF282828" FontSize="28" FontStyle="Normal|Bold" Id="d2ebc48f-3992-45d9-9604-a3791d96e800" Panel.Bounds="125,166,0*{5,2147483647},0*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="94050a99-a92a-4942-8ece-b07f4efef3a2">
+                            <Add.Item>
+                                <Label Text="Recent Groups" Foreground="#FF282828" FontSize="20" FontStyle="Normal" Id="53d2d291-d84d-4808-a8c8-a1a959b14afc" Panel.Bounds="110,301,0*{5,2147483647},0*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="94050a99-a92a-4942-8ece-b07f4efef3a2">
+                            <Add.Item>
+                                <Title Text="Favorite Buddies" Foreground="#FF282828" FontSize="26" FontStyle="Normal|Bold" Id="3bdc46f3-dfcc-426d-8706-7c96e442094f" Panel.Bounds="118,356,0*{5,2147483647},0*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="94050a99-a92a-4942-8ece-b07f4efef3a2">
+                            <Add.Item>
+                                <Image SourcePath="assets/favorite buddies.JPG" Id="3c2e583a-f72b-4db3-b307-dfa82f31436d" Panel.Bounds="82,395,0*{5,2147483647},0*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="94050a99-a92a-4942-8ece-b07f4efef3a2">
+                            <Add.Item>
+                                <Button Text="Form Group" Background="#FF48C157" Foreground="#FF282828" FontSize="22" FontStyle="Normal" Id="7ebe7ece-923e-413d-b5c3-b845456fa03c" Panel.Bounds="95,719,289{5,2147483647},78{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Set Property="Content.Width" Value="480" Target="893dbfd4-7b7d-41cd-b74e-2412ec0d2668" />
+                        <Set Property="Content.Height" Value="800" Target="893dbfd4-7b7d-41cd-b74e-2412ec0d2668" />
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </Page.Scenes>
+</Page>

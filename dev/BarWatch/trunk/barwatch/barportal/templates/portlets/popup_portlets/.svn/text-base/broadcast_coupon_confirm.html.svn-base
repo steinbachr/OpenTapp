@@ -1,0 +1,30 @@
+{% extends 'portlets/popup_portlets/base.html' %}
+
+{% block header %}
+    Confirm your broadcast
+{% endblock %}
+{% block message %}
+    Hey, just check out the information below to confirm your coupon broadcast
+    <div class="coupon-confirm">
+        <ul></ul>
+    </div>     
+    <script type="x-application/mustache" id="single_coupon">
+        {% templatetag openvariable %}=[[ ]]={% templatetag closevariable %}
+        <li class="coupon-description">[[description]]</li>        
+    </script>
+    <script type="x-application/mustache" id="group_coupon">
+        {% templatetag openvariable %}=[[ ]]={% templatetag closevariable %}
+        <li>First Tier: <span class="value">[[tierOne.description]]  ([[tierOne.min]] - [[tierOne.max]] people)</span></li>
+        <li>Second Tier: <span class="value">[[tierTwo.description]] ([[tierTwo.min]] - [[tierTwo.max]] people)</span></li>        
+    </script>
+    <script type="x-application/mustache" id="all_coupons">
+        {% templatetag openvariable %}=[[ ]]={% templatetag closevariable %}
+        <li>Dates: <span class="value">[[startDate]] - [[endDate]]</span></li>                
+        <li>Times: <span class="value">[[startTime]] - [[endTime]]</span></li>
+        <li>Limit one per customer? <span class="value">[[limit]]</span></li>        
+    </script>
+{% endblock %}
+{% block footer %}
+    <button type="button" value="cancel" data-dismiss="modal" class="btn btn-danger btn-medium">Cancel</button>
+    <button type="submit" value="" class="btn btn-success btn-medium submit">Confirm</button>    
+{% endblock %}

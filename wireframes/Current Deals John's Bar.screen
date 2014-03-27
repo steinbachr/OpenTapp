@@ -1,0 +1,109 @@
+<?Infragistics.Models format="xaml" version="17"?>
+<Page xmlns="http://prototypes.infragistics.com/"
+                                                          Id="e0ed4458-fa20-4b23-ad2c-0b4fd66f3d46">
+    <Page.Content>
+        <Content Width="480" Height="800" Background="White" Id="3ca25a31-bd15-4ef7-9ca3-aeb446c45d42">
+            <Content.Layers>
+                <Layer Layout="Stretch" Id="6791b28b-3c95-4230-9d28-66d6ae6d48d8" Panel.Layout="Stretch" />
+            </Content.Layers>
+        </Content>
+    </Page.Content>
+    <Page.Scenes>
+        <Scene Title="Start" Created="06/02/2013 16:20:19" Id="53554ca8-08eb-4d01-8669-158951155886">
+            <Scene.KeyFrames>
+                <KeyFrame Id="f8e3a0fb-8ab5-4106-adfe-cef79679da1f">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="6791b28b-3c95-4230-9d28-66d6ae6d48d8">
+                            <Add.Item>
+                                <Button Text="Home" Foreground="#FF282828" FontSize="20" FontStyle="Normal" Id="991af0cb-2360-4d5f-b122-1ca3d91533f2" Panel.Bounds="0,0,122{5,2147483647},75{5,2147483647}">
+                                    <Button.Click>
+                                        <CommandNavigate Screen="/Homescreen.screen" State="af967748-0566-4c9f-b084-3be3365e1b0e" Created="06/02/2013 16:29:35" />
+                                    </Button.Click>
+                                </Button>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="6791b28b-3c95-4230-9d28-66d6ae6d48d8">
+                            <Add.Item>
+                                <Button Text="Back" Foreground="#FF282828" FontSize="20" FontStyle="Normal" Id="6fb724d6-8a6c-4310-b95f-02e90da9d387" Panel.Bounds="358,0,122{5,2147483647},75{5,2147483647}">
+                                    <Button.Click>
+                                        <CommandNavigate Screen="/Bar Profile.screen" State="06a6dfc3-d5f1-466b-a0a5-4657d1f54f04" Created="06/02/2013 16:29:50" />
+                                    </Button.Click>
+                                </Button>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="6791b28b-3c95-4230-9d28-66d6ae6d48d8">
+                            <Add.Item>
+                                <Image SourcePath="assets/drinkUp_logo_11-26-12.jpg" Id="5f9c0bb8-73ca-4381-8701-bd2b616376bd" Panel.Bounds="121,39,224{5,2147483647},142{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="6791b28b-3c95-4230-9d28-66d6ae6d48d8">
+                            <Add.Item>
+                                <Title Text="John's Bar" Foreground="#FF282828" FontSize="34" FontFamily="Arial Black" FontStyle="Normal" Id="b3d557cc-7b8b-4dcf-9d0d-aecb69d5ab72" Panel.Bounds="134,186,197*,48*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="6791b28b-3c95-4230-9d28-66d6ae6d48d8">
+                            <Add.Item>
+                                <Label Text="Deals just for me" Foreground="#FF282828" FontSize="22" FontStyle="Normal|Underline" Id="cb76c056-a9d9-4c74-95e4-fc7b8bd345c0" Panel.Bounds="7,264,0*{5,2147483647},0*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="6791b28b-3c95-4230-9d28-66d6ae6d48d8">
+                            <Add.Item>
+                                <Label Text="25% off all draft Beers 10-Midnight" Foreground="#FF282828" FontSize="14" FontStyle="Normal" Id="9f340d72-47a5-4326-9ee6-6ac721899c7f" Panel.Bounds="21,304,0*{5,2147483647},0*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="6791b28b-3c95-4230-9d28-66d6ae6d48d8">
+                            <Add.Item>
+                                <Label Text="$1 Vodka Shots 10:00-11:00 PM" Foreground="#FF282828" FontSize="14" FontStyle="Normal" Id="9fd99df3-9e08-454f-8302-c74bc6a76bc8" Panel.Bounds="21,334,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="6791b28b-3c95-4230-9d28-66d6ae6d48d8">
+                            <Add.Item>
+                                <Link Text="Get Deal" Foreground="#FF0066CC" FontSize="14" FontStyle="Normal|Underline" Id="1055ced5-2944-4c7a-aace-f2e0e6afe4e0" Panel.Bounds="413,304,0*{5,2147483647},0*{5,2147483647}">
+                                    <Link.Click>
+                                        <CommandNavigate Screen="/Get deal from Current Deals.screen" State="e9e7d777-3eb0-48af-ba48-60feae26f3de" Created="06/02/2013 17:17:09" />
+                                    </Link.Click>
+                                </Link>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="6791b28b-3c95-4230-9d28-66d6ae6d48d8">
+                            <Add.Item>
+                                <Link Text="Get Deal" Foreground="#FF0066CC" FontSize="14" FontStyle="Normal|Underline" Id="ee1f980b-4422-4ed1-af71-4eceac00dd02" Panel.Bounds="412,334,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="6791b28b-3c95-4230-9d28-66d6ae6d48d8">
+                            <Add.Item>
+                                <Label Text="Deals for me and my drinking buddies" Foreground="#FF282828" FontSize="22" FontStyle="Normal|Underline" Id="25ee5eb4-bece-4708-b210-147cf3cf4006" Panel.Bounds="7,414,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="6791b28b-3c95-4230-9d28-66d6ae6d48d8">
+                            <Add.Item>
+                                <Label Text="3-5 People: 35% off all draft beers" Foreground="#FF282828" FontSize="14" FontStyle="Normal" Id="3e220243-c4f3-42ff-96e4-e72c1636b517" Panel.Bounds="21,470,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="6791b28b-3c95-4230-9d28-66d6ae6d48d8">
+                            <Add.Item>
+                                <Label Text="6 or more people: 50% off all draft beers" Foreground="#FF282828" FontSize="14" FontStyle="Normal" Id="4721da0a-3ff9-4202-9b9f-4cb918fe194d" Panel.Bounds="21,501,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="6791b28b-3c95-4230-9d28-66d6ae6d48d8">
+                            <Add.Item>
+                                <Link Text="Form Group" Foreground="#FF0066CC" FontSize="14" FontStyle="Normal|Underline" Id="fecdd3f7-d918-43de-b4de-7768fbafdb8e" Panel.Bounds="389,470,0*,0*">
+                                    <Link.Click>
+                                        <CommandNavigate Screen="/Form group from current deals.screen" State="ace91947-9926-49d6-b0fd-78ccf2ccab7a" Created="06/03/2013 00:06:04" />
+                                    </Link.Click>
+                                </Link>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="6791b28b-3c95-4230-9d28-66d6ae6d48d8">
+                            <Add.Item>
+                                <Link Text="Form Group" Foreground="#FF0066CC" FontSize="14" FontStyle="Normal|Underline" Id="8a368e5a-201b-4a54-a538-dc1d198c6da1" Panel.Bounds="389,501,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Set Property="Content.Width" Value="480" Target="3ca25a31-bd15-4ef7-9ca3-aeb446c45d42" />
+                        <Set Property="Content.Height" Value="800" Target="3ca25a31-bd15-4ef7-9ca3-aeb446c45d42" />
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </Page.Scenes>
+</Page>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="pytz">
+    <CLASSES>
+      <root url="file:///Library/Python/2.7/site-packages/pytz" />
+      <root url="file:///Library/Python/2.7/site-packages/pytz-2012h-py2.7.egg-info" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

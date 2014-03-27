@@ -1,0 +1,7 @@
+Bar Name: {{ coupon.bar.name }}
+Phone: {{ coupon.bar.phone }}
+Coupon Type: {{ coupon.type.verbose }}
+Coupon Description: {{ coupon.coupon_description }}
+Coupon Valid Dates: {{ coupon.from_date }} - {{ coupon.to_date }}
+Coupon Valid Times: {{ coupon.from_time }} - {{ coupon.to_time }}
+One Per Customer? {{ coupon.one_per_customer }}       

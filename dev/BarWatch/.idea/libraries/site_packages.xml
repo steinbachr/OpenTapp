@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="site-packages">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../lib/python2.7/site-packages" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

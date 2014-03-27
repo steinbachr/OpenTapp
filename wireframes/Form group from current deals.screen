@@ -1,0 +1,92 @@
+<?Infragistics.Models format="xaml" version="17"?>
+<Page xmlns="http://prototypes.infragistics.com/"
+                                                          Id="7553388d-0b56-4d28-aced-fbfbf25aee59">
+    <Page.Content>
+        <Content Width="480" Height="800" Background="White" Id="52c423c5-bf34-4d0b-af3e-f03d3c5742f5">
+            <Content.Layers>
+                <Layer Layout="Stretch" Id="94443c69-f9e5-4249-9b3c-898ada49edea" Panel.Layout="Stretch" />
+            </Content.Layers>
+        </Content>
+    </Page.Content>
+    <Page.Scenes>
+        <Scene Title="Start" Created="06/02/2013 17:40:38" Id="ace91947-9926-49d6-b0fd-78ccf2ccab7a">
+            <Scene.KeyFrames>
+                <KeyFrame Id="b4ba7f3a-6e1e-4e3c-9284-fb9ce8fa4bc0">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="94443c69-f9e5-4249-9b3c-898ada49edea">
+                            <Add.Item>
+                                <Button Text="Home" Foreground="#FF282828" FontSize="20" FontStyle="Normal" Id="41f0b870-05ec-47da-907b-0481be8d1ffe" Panel.Bounds="0,0,122{5,2147483647},75{5,2147483647}">
+                                    <Button.Click>
+                                        <CommandNavigate Screen="/Homescreen.screen" State="af967748-0566-4c9f-b084-3be3365e1b0e" Created="06/02/2013 17:41:35" />
+                                    </Button.Click>
+                                </Button>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="94443c69-f9e5-4249-9b3c-898ada49edea">
+                            <Add.Item>
+                                <Button Text="Back" Foreground="#FF282828" FontSize="20" FontStyle="Normal" Id="c5b5e2a0-8cd3-4e34-af53-7adfa9954cce" Panel.Bounds="358,0,122{5,2147483647},75{5,2147483647}">
+                                    <Button.Click>
+                                        <CommandNavigate Screen="/Current Deals John's Bar.screen" State="53554ca8-08eb-4d01-8669-158951155886" Created="06/02/2013 17:41:55" />
+                                    </Button.Click>
+                                </Button>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="94443c69-f9e5-4249-9b3c-898ada49edea">
+                            <Add.Item>
+                                <Image SourcePath="assets/drinkUp_logo_11-26-12.jpg" Id="31262215-46eb-4586-a87b-844d47bd067a" Panel.Bounds="121,39,224{5,2147483647},142{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="94443c69-f9e5-4249-9b3c-898ada49edea">
+                            <Add.Item>
+                                <Title Text="Form Group" Foreground="#FF282828" FontSize="34" FontStyle="Normal|Underline" Id="c5193072-bee5-4fb4-b6ba-79ed1e5d85af" Panel.Bounds="143,189,0*{5,2147483647},0*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="94443c69-f9e5-4249-9b3c-898ada49edea">
+                            <Add.Item>
+                                <Image SourcePath="assets/facebook logo.jpg" Id="481b3c1f-e24e-4587-b669-b2980f6ecc6e" Panel.Bounds="6,277,79{5,2147483647},66{5,2147483647}">
+                                    <Image.Click>
+                                        <CommandNext SceneId="43b61728-2952-47ac-a359-a60b845c4987" Created="06/02/2013 17:56:42" />
+                                    </Image.Click>
+                                </Image>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="94443c69-f9e5-4249-9b3c-898ada49edea">
+                            <Add.Item>
+                                <Label Text="From Facebook" Foreground="#FF282828" FontSize="20" FontStyle="Normal" Id="19fd8167-fba7-4f4e-b11a-2d0a0f596eff" Panel.Bounds="99,296,0*{5,2147483647},0*{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="94443c69-f9e5-4249-9b3c-898ada49edea">
+                            <Add.Item>
+                                <Image SourcePath="assets/drinking buddies.JPG" Id="8ae031cb-0a17-4ea6-a032-d1733d9bbd33" Panel.Bounds="11,369,74{5,2147483647},66{5,2147483647}">
+                                    <Image.Click>
+                                        <CommandNavigate Screen="/Drinking buddies.screen" State="bd0ffbb8-ca53-464f-9849-e03f030dac05" Created="06/03/2013 00:07:46" />
+                                    </Image.Click>
+                                </Image>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="94443c69-f9e5-4249-9b3c-898ada49edea">
+                            <Add.Item>
+                                <Label Text="From My Drinking Buddies" Foreground="#FF282828" FontSize="20" FontStyle="Normal" Id="b772bef3-3fc2-406f-a067-8d6c48e8ad02" Panel.Bounds="99,386,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Set Property="Content.Width" Value="480" Target="52c423c5-bf34-4d0b-af3e-f03d3c5742f5" />
+                        <Set Property="Content.Height" Value="800" Target="52c423c5-bf34-4d0b-af3e-f03d3c5742f5" />
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+        <Scene Title="Tapped/Clicked facebook logo" StateGroup="ace91947-9926-49d6-b0fd-78ccf2ccab7a" ParentScene="ace91947-9926-49d6-b0fd-78ccf2ccab7a" Created="06/02/2013 17:56:42" Id="43b61728-2952-47ac-a359-a60b845c4987">
+            <Scene.KeyFrames>
+                <KeyFrame Id="cda5bad7-7623-4edc-b757-813af9de88dd">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="94443c69-f9e5-4249-9b3c-898ada49edea">
+                            <Add.Item>
+                                <Image SourcePath="assets/Facebook Buddies.png" Id="199baca2-a419-48cd-b3c4-5ba89c9d5a88" Panel.Bounds="0,-9,492{5,2147483647},953{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </Page.Scenes>
+</Page>

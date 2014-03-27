@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="py">
+    <CLASSES>
+      <root url="file:///Library/Python/2.7/site-packages/py" />
+      <root url="file:///Library/Python/2.7/site-packages/py-1.4.12-py2.7.egg-info" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

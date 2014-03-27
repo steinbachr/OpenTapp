@@ -1,0 +1,12 @@
+<div class="modal fade{% if hidden %} hide{% endif %}" id="{{ id }}" role="dialog">
+    <div class="modal-header">
+        {% block header %}{% endblock %}
+    </div>
+    <div class="modal-body">
+        {% block message %}{% endblock %}
+    </div>
+    <div class="modal-footer">
+        {% block footer %}{% endblock %}
+        {% block errors %}{% if form and form.non_field_errors %}{{ form.non_field_errors }}{% endif %}{% endblock %}
+    </div>
+</div>

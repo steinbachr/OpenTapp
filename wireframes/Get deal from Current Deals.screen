@@ -1,0 +1,71 @@
+<?Infragistics.Models format="xaml" version="17"?>
+<Page xmlns="http://prototypes.infragistics.com/"
+                                                          Id="4ab220c3-24e7-41ec-b868-9c45d781798d">
+    <Page.Content>
+        <Content Width="480" Height="800" Background="White" Id="4445b3ee-f43c-45f9-97f2-553d62bc106c">
+            <Content.Layers>
+                <Layer Layout="Stretch" Id="96bfe781-e229-4757-a73b-15382679c064" Panel.Layout="Stretch" />
+            </Content.Layers>
+        </Content>
+    </Page.Content>
+    <Page.Scenes>
+        <Scene Title="Start" Created="06/02/2013 17:14:53" Id="e9e7d777-3eb0-48af-ba48-60feae26f3de">
+            <Scene.KeyFrames>
+                <KeyFrame Id="6d91c661-39d4-448c-9996-ccd8f8c69732">
+                    <KeyFrame.Operations>
+                        <Add Property="Panel.Children" Target="96bfe781-e229-4757-a73b-15382679c064">
+                            <Add.Item>
+                                <Button Text="Home" Foreground="#FF282828" FontSize="20" FontStyle="Normal" Id="2f463922-1939-4fed-9cef-0c3f5c73bd5c" Panel.Bounds="0,0,122{5,2147483647},75{5,2147483647}">
+                                    <Button.Click>
+                                        <CommandNavigate Screen="/Homescreen.screen" State="af967748-0566-4c9f-b084-3be3365e1b0e" Created="06/02/2013 17:31:12" />
+                                    </Button.Click>
+                                </Button>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="96bfe781-e229-4757-a73b-15382679c064">
+                            <Add.Item>
+                                <Button Text="Back" Foreground="#FF282828" FontSize="20" FontStyle="Normal" Id="2fde9ac0-6829-4a65-b5e2-65ca1ac3ccb7" Panel.Bounds="358,0,122{5,2147483647},75{5,2147483647}">
+                                    <Button.Click>
+                                        <CommandNavigate Screen="/Current Deals John's Bar.screen" State="53554ca8-08eb-4d01-8669-158951155886" Created="06/02/2013 17:31:27" />
+                                    </Button.Click>
+                                </Button>
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="96bfe781-e229-4757-a73b-15382679c064">
+                            <Add.Item>
+                                <Image SourcePath="assets/drinkUp_logo_11-26-12.jpg" Id="fb1234aa-b922-41ec-a643-3b80ee4c1e2c" Panel.Bounds="121,39,224{5,2147483647},142{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="96bfe781-e229-4757-a73b-15382679c064">
+                            <Add.Item>
+                                <Title Text="John's Bar" Foreground="#FF282828" FontSize="34" FontFamily="Arial Black" FontStyle="Normal" Id="a06c3ffd-a846-4973-9d3b-e8f7ef326aeb" Panel.Bounds="134,232,0*,0*" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Before="2f463922-1939-4fed-9cef-0c3f5c73bd5c" Target="96bfe781-e229-4757-a73b-15382679c064">
+                            <Add.Item>
+                                <Rectangle Background="#FFE2E2E2" Id="4c7ecf14-e3d2-4914-a280-9d992c1e8cab" Panel.Bounds="29,187,422{5,2147483647},590{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="96bfe781-e229-4757-a73b-15382679c064">
+                            <Add.Item>
+                                <Label Text="25% off all draft beers&#xD;10:00 pm- 2:00 am, 06/02/2013" Align="Center" Foreground="#FF282828" FontSize="24" FontFamily="Times New Roman" FontStyle="Normal" Id="f53e3149-b135-444e-bacd-7d477a967888" Panel.Bounds="81,299,326{5,2147483647},52{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="96bfe781-e229-4757-a73b-15382679c064">
+                            <Add.Item>
+                                <Image SourcePath="assets/drinkUp_logo_11-26-12.jpg" Id="68bbf106-3fa3-47d5-933c-a5af034b7182" Panel.Bounds="51,384,364{5,2147483647},218{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Add Property="Panel.Children" Target="96bfe781-e229-4757-a73b-15382679c064">
+                            <Add.Item>
+                                <Button Text="Save to My Deals" Background="#FF48C157" Foreground="#FF282828" FontSize="22" FontStyle="Normal" Id="3930057c-8163-4751-8c26-fe8bbf0b47a0" Panel.Bounds="101,672,289{5,2147483647},78{5,2147483647}" />
+                            </Add.Item>
+                        </Add>
+                        <Set Property="Content.Width" Value="480" Target="4445b3ee-f43c-45f9-97f2-553d62bc106c" />
+                        <Set Property="Content.Height" Value="800" Target="4445b3ee-f43c-45f9-97f2-553d62bc106c" />
+                    </KeyFrame.Operations>
+                </KeyFrame>
+            </Scene.KeyFrames>
+        </Scene>
+    </Page.Scenes>
+</Page>

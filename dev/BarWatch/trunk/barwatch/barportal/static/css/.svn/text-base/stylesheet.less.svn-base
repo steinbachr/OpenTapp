@@ -1,0 +1,293 @@
+@import "core.less";
+
+.sliders-background () {
+  background: #a9e5fb; /* Old browsers */
+  background: -moz-linear-gradient(top,  #a9e5fb 0%, #f4f4f4 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a9e5fb), color-stop(100%,#f4f4f4)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #a9e5fb 0%,#f4f4f4 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #a9e5fb 0%,#f4f4f4 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #a9e5fb 0%,#f4f4f4 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #a9e5fb 0%,#f4f4f4 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9e5fb', endColorstr='#f4f4f4',GradientType=0 ); /* IE6-9 */
+}
+
+.tab-content-header {
+    border-bottom: solid 1px #ccc;
+}
+.description {
+    text-align: center;
+}
+.description-separator {
+    margin-top: 10px;
+    border-bottom: solid 1px;
+}
+.nav .logo.active a, .nav .logo.active a:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background-color: inherit;
+}
+.timepicker-div {
+  display: inline-block;
+  input.time-select {
+    width: 100px;    
+  }
+}
+
+
+/**PROFILE PAGE**/
+#tab-profile {
+  .profile-portlet {
+    img {      
+      height: 400px;      
+    }
+    div.profile-info {
+      div {
+        padding-top: 10px;
+      }
+      ol {
+        list-style-type: decimal-leading-zero;
+      }
+    }
+    button {      
+      margin-top: 20px;
+    }
+  }
+  .edit-portlet {
+    form.basic-info {
+      border-bottom: dashed;
+    }
+    button.save {
+      margin: 20px auto;
+      display: block;
+    }
+    div.menu-desc {
+      margin: auto;
+      width: 300px;
+      padding: 0px 10px;
+      border: solid 1px #ddd;
+      ul li {
+        position: relative;
+        padding: 10px 0px;
+        border-top: dotted 2px #CCC;
+        a.remove-one {
+          position: relative;
+          left: -20px;
+        }
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      span.item-name {
+        font-weight: bold;
+      }
+      span.item-price {
+        float: right;
+      }
+      a.add-one {
+        font-size: 14px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      ul {
+        list-style-type: none;
+        label {
+          display: inline-block;
+          padding-right: 10px;
+        }
+        input {
+          width: 50px;
+          &.item-name {
+            width: 200px;
+            margin-right: 115px;
+          }
+          &.item-price {
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+#tab-dashboard {
+  .dashboard-box {
+    border: 3px dashed @dashed-grey;  
+    margin-top: 20px;
+    padding: 0px 20px 15px 20px;
+  }
+}
+
+/**QUEUED COUPONS**/
+#tab-queue {
+    .queued-coupons {        
+        tr td.coupon-cancel {                  
+            a {            
+                display: inline-block;
+                font-size: 20px;  
+                color: @dark-red;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+        }       
+    }
+}
+
+/**HELP PAGE**/
+#tab-help, #tab-payments {
+    .accordion {
+        .accordion-group {
+            width: 600px;
+            transition:width 2s;
+            -moz-transition:width 2s; /* Firefox 4 */
+            -webkit-transition:width 2s; /* Safari and Chrome */
+            -o-transition:width 2s; /* Opera */
+            a span {
+                float: right;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+/**PAYMENTS PAGE**/
+#tab-payments {
+    div.current-balance {
+        padding: 30px;
+        border: solid 1px #eee;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        .pay-now {
+            text-align: center;
+            padding-top: 20px;
+        }
+        opacity: .4;
+        transition: opacity 2s, background-color 2s;
+        -moz-transition: opacity 2s, background-color 2s; /* Firefox 4 */
+        -webkit-transition: opacity 2s, background-color 2s; /* Safari and Chrome */
+        -o-transition: opacity 2s, background-color 2s; /* Opera */
+        &:hover {
+            background-color: #D1FFF0;
+            opacity: 1;
+        }
+    }
+    div.past-payments {
+        margin-top: 20px;
+    }
+}
+
+
+/**BROADCAST PAGE**/
+.ui-datepicker {
+    z-index: 1000 !important;
+}
+.broadcast {
+    .coupon-desc {                
+        border: dashed 5px @dashed-grey;
+        width: 700px;
+        margin: 40px auto 100px auto;
+        padding: 20px;        
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        div {
+            margin-bottom: 20px;
+            label {
+                margin-right: 60px;
+            }
+        }
+        div.modal-footer {
+          margin-bottom: 0px;
+        }
+        select {
+          width: 150px;
+        }  
+        input.coupon-description {
+          width: 350px;
+        }
+        .coupon-discount-amount {
+            float: right;
+            font-weight: bold;
+        }
+        .coupon-discounted-price {
+            clear: right;
+            float: right;
+            font-weight: bold;           
+        }
+        .submit-div {
+            button {
+                margin: 40px auto;  
+                display: block;                
+            }
+        }
+      div.boolean-fields {
+        vertical-align:text-top;
+        height:46px;
+        margin:15px 0px 0px 24px;
+        span.checkbox-text {
+          margin-left: 8px;
+        }
+      }
+      .discount-tiers {
+          .discount-group {
+            float:left;
+            width: 200px;
+            margin-right: 30px;
+            span.group-range-display {
+              float: left;
+            }
+            .group-range {
+              height: 250px;
+              margin: auto;
+              margin-top: 20px;
+              .ui-slider-range {
+                .sliders-background;
+              }
+            }
+            .discount-value {
+              margin-top: 20px;
+            } 
+            div.group-description {
+              input {
+                width: 200px;  
+              }              
+            }
+          }          
+        }      
+    }    
+}
+
+/** MODALS **/
+.modal#broadcast_confirm {
+  .coupon-confirm {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: dashed 3px @dashed-grey;
+    ul {
+      list-style-type: none;
+      li span.value {
+        font-weight: bold;
+      }
+      li.coupon-description {
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+  }
+}
+.modal#coupon_details {
+  table {
+    td {
+      padding: 10px;
+    }
+    th {
+      text-align: left;
+    }
+  }
+}
+
+

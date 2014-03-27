@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="span12 lead tab-content-header" >
+        Your current balance
+    </div>
+</div>
+<div class="row">
+    <div class="span12" >
+{#        <div class="current-balance">#}
+{#            Since your last payment, your bar has published <strong>{{ num_published }}</strong> coupons of which <strong>{{ num_redeemed }}</strong> have been#}
+{#            redeemed. At the rate of <strong>{{ pay_rate }} cents</strong> per redeemed coupon you currently owe <strong>{{ total_owed }} dollars</strong>#}
+{#            <div class="pay-now"><a class="btn btn-primary btn-large">Pay Now</a></div>#}
+{#        </div>#}
+{#        {% if past_payments %}#}
+{#        <div class="past-payments">#}
+{#            <div class="accordion" id="past_payments">#}
+{#            {% for index,payment in past_payments %}#}
+{#                <div class="accordion-group {% if index == 0 %}first" style="width:99%;"{% else %}"{% endif %}>#}
+{#                    <div class="accordion-heading">#}
+{#                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#past_payments" href="#payment_{{ index }}">#}
+{#                            {{ payment.touch_datetime }}<span><i class="icon-caret-up up"{% if index != 0 %}style="display:none;"{% endif %}></i><i class="icon-caret-down down"{% if index == 0 %}style="display:none;"{% endif %}></i></span>#}
+{#                        </a>#}
+{#                    </div>#}
+{#                    <div id="payment_{{ index }}" class="accordion-body collapse {% if index == 0 %}in{% endif %}">#}
+{#                        <div class="accordion-inner">#}
+{#                            Amount payed: ${{ payment.amount }}#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>                #}
+{#            {% endfor %}#}
+{#            </div>#}
+{#        </div>#}
+{#        {% else %}#}
+{#            <h2>No past payments</h2>            #}
+{#        {% endif %}        #}
+        <h1>Currently we're free!</h1>
+        <h4>However if you want to donate to our cause, help is always <a href="#">appreciated</a></h4>
+    </div>
+</div>

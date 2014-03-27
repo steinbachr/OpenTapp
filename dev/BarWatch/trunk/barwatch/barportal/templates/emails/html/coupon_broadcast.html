@@ -1,0 +1,36 @@
+<div style="margin: 70px;">
+    <table cellpadding="15">
+        <thead>        
+        <th>Bar Name</th>
+        <th>Bar Phone</th>
+        <th>Coupon Type</th>
+        <th>Coupon Description</th>
+        <th>Coupon Valid Dates</th>
+        <th>Coupon Valid Times</th>
+        <th>One Per Customer?</th>        
+        </thead>
+        <tr>
+            <td>
+                {{ coupon.bar.name }}
+            </td>
+            <td>
+                {{ coupon.bar.phone }}
+            </td>
+            <td>
+                {{ coupon.type.verbose }}
+            </td>
+            <td>
+                {{ coupon.coupon_description }}
+            </td>
+            <td>
+                {{ coupon.from_date }} - {{ coupon.to_date }}
+            </td>
+            <td>
+                {{ coupon.from_time }} - {{ coupon.to_time }}
+            </td>
+            <td>
+                {{ coupon.one_per_customer }}
+            </td>
+        </tr>
+    </table>    
+</div>

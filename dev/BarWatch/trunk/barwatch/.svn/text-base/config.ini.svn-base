@@ -1,0 +1,10 @@
+##APP
+app_name=drinkUp
+app_email=drinkUp@getdrinkup.com
+environment=debug
+admin_emails=bfreed2011@gmail.com,steinbach.rj@gmail.com,tnebesar@gmail.com
+##GEONAMES
+api_timezone_url=http://api.geonames.org/timezoneJSON
+geonames_user=steinbachr
+geonames_email=steinbach.rj@gmail.com
+geonames_password=barwatch
