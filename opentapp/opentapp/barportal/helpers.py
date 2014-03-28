@@ -46,7 +46,7 @@ def string_from_date(d):
 def parse_config_file():    
     config_dict = {}    
 
-    with open('/opentapp/config.ini', 'r') as file:
+    with open('{base}/config.ini'.format(base=os.path.dirname(os.path.dirname(__file__))), 'r') as file:
         for line in file.readlines():
             if line.startswith('#'):
                 continue
